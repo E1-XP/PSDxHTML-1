@@ -12,6 +12,7 @@ const disableTransition = () => {
 const onNavClick = () => {
   mainNav.classList.toggle('js-is-open');
   if (isNavOpen()) enableTransition();
+  navButton.setAttribute('aria-expanded', `${isNavOpen()}`);
 
   const methods = ['removeEventListener', 'addEventListener'];
   window[methods[+isNavOpen()]]('scroll', blockScroll);
