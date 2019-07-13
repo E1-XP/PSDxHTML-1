@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const WebpackCleanPlugin = require('webpack-clean');
+const cleanCSS = require('clean-css');
 
 module.exports = {
   entry: ['./src/js/index.js', './src/scss/main.scss'],
@@ -49,7 +50,12 @@ module.exports = {
     new WebpackCleanPlugin(['./public/main.css', './public/main.js'])
   ],
   optimization: {
-    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})]
+    minimizer: [
+      new TerserJSPlugin(),
+      new OptimizeCSSAssetsPlugin({
+        cssProcessor: cleanCSS
+      })
+    ]
   },
   resolve: {
     extensions: ['*', '.js']
