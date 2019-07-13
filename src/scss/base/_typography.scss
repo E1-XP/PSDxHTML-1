@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+  font-size: 3.75rem;
+  font-weight: 100;
+  line-height: 5rem;
+  color: $color-white;
+
+  &--inverted {
+    color: $color-primary;
+  }
+}
+
+.subtitle {
+  color: $color-grey;
+  font-size: 2.25rem;
+  line-height: 3.5rem;
+}
+
+.feature-heading {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  color: $color-primary;
+
+  @include bp($bp-very-small) {
+    font-size: 2.2rem;
+  }
+}
+
+.feature-text {
+  color: $color-primary;
+  font-weight: 700;
+  line-height: 3.75rem;
+  font-size: 1.5rem;
+
+  @include bp($bp-very-small) {
+    font-size: 1.9rem;
+  }
+}
+
+.item-text {
+  color: $color-white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+
+  @include bp($bp-very-small) {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+  }
+}
+
+.paragraph {
+  @extend .item-text;
+  color: $color-grey;
+}

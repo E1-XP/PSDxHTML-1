@@ -1,0 +1,42 @@
+.button {
+  @extend .item-text;
+
+  display: block;
+  padding: 0.5rem 3.26rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid rgba($color-grey, 0.3);
+  color: $color-primary;
+  background-color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-secondary;
+  }
+
+  &--outlined {
+    font-weight: 400;
+
+    &.button--primary {
+      color: $color-secondary;
+      background-color: transparent;
+
+      &.button--primary:hover {
+        background-color: $color-secondary;
+        color: $color-white;
+      }
+    }
+  }
+
+  &--primary {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &:hover {
+      background-color: darken($color-secondary, 5%);
+    }
+  }
+}
