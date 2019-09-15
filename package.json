@@ -1,5 +1,5 @@
 {
-  "name": "PSDxHTML-1",
+  "name": "PSDxHTML",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,8 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-css": "^4.2.1",
     "copy-webpack-plugin": "^5.0.3",
@@ -36,9 +38,14 @@
     "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.12.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.17.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "stylelint": "^10.1.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-scss": "^3.9.1",
     "terser-webpack-plugin": "^1.3.0",
     "url-loader": "^2.0.1",
     "webpack": "^4.32.2",
@@ -48,5 +55,9 @@
   },
   "dependencies": {
     "normalize-scss": "^7.0.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }

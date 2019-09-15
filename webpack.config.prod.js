@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const WebpackCleanPlugin = require('webpack-clean');
+const autoprefixer = require('autoprefixer');
 const cleanCSS = require('clean-css');
 
 module.exports = {
@@ -23,7 +24,17 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [autoprefixer()]
+            }
+          },
+          'sass-loader'
+        ]
       },
       {
         test: /\.(svg|gif|jpg|png|eot|woff|ttf)$/,
