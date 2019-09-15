@@ -1,9 +1,10 @@
 @mixin burger-layer {
-  width: 100%;
+  width: 3.8rem;
   height: 2px;
   background-color: $color-white;
   border-radius: 3px;
   transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition-property: transform, background-color;
 }
 
 .navigation {
@@ -26,8 +27,8 @@
   }
 
   &__button {
-    width: 3.8rem;
-    height: 1.6rem;
+    width: 4.8rem;
+    height: 2.6rem;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -40,10 +41,16 @@
       justify-content: center;
       position: relative;
       visibility: visible;
-      z-index: 3;
+      z-index: 1000;
 
       & > span {
+        width: 3.8rem;
+        height: 100%;
+      }
+
+      & > span > span {
         @include burger-layer();
+
         display: block;
 
         &::before,
@@ -56,11 +63,11 @@
         }
 
         &::before {
-          top: 0;
+          transform: translateY(-8px);
         }
 
         &::after {
-          bottom: 0;
+          transform: translateY(8px);
         }
       }
     }
@@ -68,11 +75,11 @@
 
   &__list {
     display: flex;
-    flex: 1 1;
+    width: 43rem;
     justify-content: space-between;
     align-items: center;
-    max-width: 35rem;
     transition: opacity 0.3s ease-in;
+    z-index: 999;
 
     @include bp($bp-medium) {
       display: flex;
@@ -89,6 +96,10 @@
       max-width: initial;
       justify-content: space-around;
       pointer-events: none;
+
+      .navigation__item {
+        line-height: 4.625rem;
+      }
 
       .navigation__link {
         font-size: 2rem;
@@ -115,18 +126,18 @@
 
   &.js-is-open &__button {
     outline: none;
+    position: fixed;
+    right: 3.35rem;
 
-    & > span {
+    & > span > span {
       background-color: transparent;
 
       &::before {
-        top: 8px;
-        transform: rotate(-45deg);
+        transform: translateY(0) rotate(-45deg);
       }
 
       &::after {
-        bottom: 8px;
-        transform: rotate(45deg);
+        transform: translateY(0) rotate(45deg);
       }
     }
   }

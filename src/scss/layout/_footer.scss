@@ -45,6 +45,11 @@
     @include bp($bp-very-small) {
       width: 7.125rem;
     }
+
+    & .footer__link {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__link {
