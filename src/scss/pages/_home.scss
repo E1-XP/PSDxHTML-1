@@ -38,7 +38,7 @@
     padding-top: 4rem;
   }
 
-  .heading {
+  &__heading {
     @include bp($bp-very-small) {
       text-align: center;
     }
@@ -57,7 +57,7 @@
     }
   }
 
-  .paragraph {
+  &__paragraph {
     max-width: 36.5rem;
     padding: 1.8rem;
     padding-left: 0;
@@ -321,7 +321,7 @@
       padding: 1rem;
     }
 
-    .heading {
+    &-heading {
       margin-bottom: 2.3rem;
 
       @include bp($bp-very-small) {
@@ -329,7 +329,7 @@
       }
     }
 
-    .paragraph {
+    &-paragraph {
       margin-bottom: 2.1rem;
 
       @include bp($bp-very-small) {
@@ -361,13 +361,13 @@
     margin-bottom: 18rem;
   }
 
-  .heading {
+  &__heading {
     margin-top: 6.375rem;
     margin-bottom: 3rem;
     text-align: center;
   }
 
-  .paragraph {
+  &__paragraph {
     max-width: 62rem;
     text-align: center;
   }
@@ -408,7 +408,7 @@
   }
 
   &__feature {
-    @extend .feature-text;
+    @include feature-text;
 
     border-bottom: 2px solid $color-secondary;
     position: absolute;
@@ -453,7 +453,7 @@
         }
       }
 
-      .paragraph {
+      .section-presentation__feature-paragraph {
         text-align: left;
         left: 0;
       }
@@ -490,7 +490,7 @@
         }
       }
 
-      .paragraph {
+      .section-presentation__feature-paragraph {
         text-align: right;
         right: 0;
       }
@@ -520,7 +520,7 @@
       box-sizing: content-box;
     }
 
-    .paragraph {
+    &-paragraph {
       position: absolute;
       max-width: 15rem;
       margin-top: 1.45rem;
@@ -537,12 +537,12 @@
   margin: 0 auto;
   margin-bottom: 6.5rem;
 
-  .heading {
+  &__heading {
     text-align: center;
     margin-bottom: 5.6rem;
   }
 
-  .button {
+  &__button {
     margin: 0 auto;
   }
 
@@ -554,7 +554,7 @@
     }
   }
 
-  & > .paragraph {
+  &__paragraph {
     max-width: 57rem;
     margin: 0 auto;
     margin-bottom: 4.18rem;

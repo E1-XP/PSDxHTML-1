@@ -13,7 +13,7 @@
   }
 
   &__heading {
-    @extend .feature-heading;
+    @include feature-heading;
 
     text-transform: uppercase;
   }
@@ -49,7 +49,7 @@
   }
 
   &__list-item {
-    @extend .paragraph;
+    @include paragraph;
     line-height: 2.25rem;
     display: flex;
     align-items: center;

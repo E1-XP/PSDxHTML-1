@@ -16,7 +16,7 @@
   }
 
   &__heading {
-    @extend .feature-text;
+    @include feature-text;
 
     @include bp($bp-very-small) {
       line-height: 4.75rem;
@@ -24,11 +24,11 @@
   }
 
   &__text {
-    @extend .paragraph;
+    @include paragraph;
     text-align: center;
   }
 
-  & .button {
+  &__button {
     margin-top: auto;
     padding: 0.5rem 4.26rem;
   }

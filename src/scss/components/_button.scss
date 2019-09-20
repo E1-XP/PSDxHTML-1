@@ -1,5 +1,5 @@
 .button {
-  @extend .item-text;
+  @include item-text;
 
   display: block;
   padding: 0.5rem 3.26rem;

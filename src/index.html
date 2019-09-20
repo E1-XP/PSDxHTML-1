@@ -17,18 +17,16 @@
         <nav id="main-nav" class="navigation">
           <h1 class="logo">
             <a href="/">
-              <img src="./assets/img/Logo.png" alt="Merkury Logo" />
+              <img src="./assets/img/Logo.png" alt="Merkury" />
             </a>
           </h1>
-          <button
-            id="nav-btn"
-            class="navigation__button"
-            aria-label="navigation toggle button"
-            aria-expanded="false"
-          >
-            <span>
-              <span></span>
+          <button id="nav-btn" class="navigation__button" aria-expanded="false">
+            <span class="h-visually-hidden">
+              Toggle Navigation menu
             </span>
+            <div class="navigation__button-inner">
+              <span></span>
+            </div>
           </button>
           <ul id="nav-list" class="navigation__list h-transition-none">
             <li class="navigation__item">
@@ -53,88 +51,88 @@
           </ul>
         </nav>
         <div class="header__content">
-          <h2 class="heading">Grow Your business with Merkury</h2>
-          <p class="subtitle">
+          <h2 class="t-heading header__heading">
+            Grow Your business with Merkury
+          </h2>
+          <p class="t-subtitle header__subtitle">
             Your partner in crime!
           </p>
           <button class="button button--primary">Get started</button>
           <img
             src="./assets/img/dashboard.jpg"
-            alt="Merkury Dashboard"
+            alt="Merkury dashboard"
             class="header__image"
           />
         </div>
       </header>
       <main>
         <section class="section-features">
+          <h2 class="section-features__heading h-visually-hidden">Features</h2>
           <div class="l-container">
             <article class="feature">
               <img
                 class="feature__image"
                 src="./assets/img/workflow.png"
-                alt="simplified task icon"
+                alt=""
               />
               <h3 class="feature__heading">Manage Your Workflow</h3>
               <p class="feature__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button class="button">See more</button>
+              <button class="button feature__button">See more</button>
             </article>
             <article class="feature">
               <img
                 class="feature__image"
                 src="./assets/img/analytics.png"
-                alt="data graph curve icon"
+                alt=""
               />
               <h3 class="feature__heading">Analytics & Insights</h3>
               <p class="feature__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button class="button">See more</button>
+              <button class="button feature__button">See more</button>
             </article>
             <article class="feature">
               <img
                 class="feature__image"
                 src="./assets/img/calendar.png"
-                alt="calendar icon"
+                alt=""
               />
               <h3 class="feature__heading">Organize Your Deadlines</h3>
               <p class="feature__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <button class="button">
+              <button class="button feature__button">
                 See more
               </button>
             </article>
           </div>
         </section>
         <section class="section-mobility">
+          <h2 class="section-mobility__heading h-visually-hidden">Mobility</h2>
           <article class="section-mobility__content">
-            <h2 class="heading heading--inverted">
+            <h2 class="t-heading t-heading--inverted section-mobility__heading">
               All You need is a browser!
             </h2>
-            <p class="paragraph">
+            <p class="t-paragraph section-mobility__paragraph">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p class="paragraph">
+            <p class="t-paragraph section-mobility__paragraph">
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <ul class="section-mobility__list">
               <li class="section-mobility__list-item">
-                <span
-                  ><img src="./assets/img/checked6.png" alt="checked icon"
-                /></span>
+                <span><img src="./assets/img/checked6.png" alt=""/></span>
                 Lorem ipsum dolor sit amet consectetur
               </li>
               <li class="section-mobility__list-item">
-                <span>
-                  <img src="./assets/img/checked6.png" alt="checked icon"
-                /></span>
+                <span> <img src="./assets/img/checked6.png" alt=""/></span>
                 Ut enim ad minim veniam quis nostrud
               </li>
             </ul>
@@ -147,15 +145,15 @@
           </figure>
         </section>
         <section class="section-dragndrop">
+          <h2 class="section-dragndrop__heading h-visually-hidden">
+            Drag & Drop
+          </h2>
           <div class="section-dragndrop__tasks">
             <figure class="section-dragndrop__tasks-row">
               <h3 class="section-dragndrop__tasks-header">
                 In Progress <span>(3)</span>
                 <span>
-                  <img
-                    src="./assets/img/chevron-right-icon.png"
-                    alt="chevron right icon"
-                  />
+                  <img src="./assets/img/chevron-right-icon.png" alt="" />
                 </span>
               </h3>
               <div class="section-dragndrop__task">
@@ -178,30 +176,34 @@
             </figure>
           </div>
           <div class="section-dragndrop__content">
-            <h2 class="heading">Drag & Drop</h2>
-            <p class="paragraph">
+            <h2 class="t-heading section-dragndrop__content-heading">
+              Drag & Drop
+            </h2>
+            <p class="t-paragraph section-dragndrop__content-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p class="paragraph">
+            <p class="t-paragraph section-dragndrop__content-paragraph">
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
             <div class="section-dragndrop__controls">
               <a href="#" class="section-dragndrop__button">
-                <img src="./assets/img/Arrow_left.png" alt="arrow left" />
+                <img src="./assets/img/Arrow_left.png" alt="" />
               </a>
               <a href="#" class="section-dragndrop__button">
-                <img src="./assets/img/Arrow_right.png" alt="arrow right" />
+                <img src="./assets/img/Arrow_right.png" alt="" />
               </a>
             </div>
           </div>
         </section>
         <section class="section-presentation">
-          <h2 class="heading heading--inverted">
+          <h2
+            class="t-heading t-heading--inverted section-presentation__heading"
+          >
             Powerfull PSD Template
           </h2>
-          <p class="paragraph">
+          <p class="t-paragraph section-presentation__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -211,14 +213,14 @@
             <img src="./assets/img/mockup.png" alt="application screen" />
             <div class="section-presentation__feature">
               Clean & modern layout
-              <p class="paragraph">
+              <p class="t-paragraph section-presentation__feature-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor
               </p>
             </div>
             <div class="section-presentation__feature">
               Easy to customize
-              <p class="paragraph">
+              <p class="t-paragraph section-presentation__feature-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor
               </p>
@@ -226,7 +228,7 @@
           </figure>
         </section>
         <section class="section-pricing">
-          <h2 class="heading heading--inverted">
+          <h2 class="t-heading t-heading--inverted section-pricing__heading">
             Check our pricing!
           </h2>
           <div class="l-container">
@@ -239,37 +241,25 @@
               <ul class="card__list">
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/error-icon-small.png"
-                      alt="error icon"
-                    />
+                    <img src="./assets/img/error-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/error-icon-small.png"
-                      alt="error icon"
-                    />
+                    <img src="./assets/img/error-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
@@ -284,37 +274,25 @@
               <ul class="card__list">
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/error-icon-small.png"
-                      alt="error icon"
-                    />
+                    <img src="./assets/img/error-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
@@ -329,49 +307,37 @@
               <ul class="card__list">
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
                 <li class="card__list-item">
                   <span>
-                    <img
-                      src="./assets/img/checked-icon-small.png"
-                      alt="checked icon"
-                    />
+                    <img src="./assets/img/checked-icon-small.png" alt="" />
                   </span>
                   Lorem ipsum dolor sit am
                 </li>
               </ul>
             </article>
           </div>
-          <div class="paragraph">
+          <div class="t-paragraph section-pricing__paragraph">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </div>
-          <button class="button button--primary">
+          <button class="button button--primary section-pricing__button">
             Join now!
           </button>
         </section>
@@ -395,17 +361,17 @@
               <ol class="footer__list footer__list--icons">
                 <li class="footer__list-item">
                   <a href="#" class="footer__link"
-                    ><img src="./assets/img/fb.png" alt="facebook icon"
+                    ><img src="./assets/img/fb.png" alt=""
                   /></a>
                 </li>
                 <li class="footer__list-item">
                   <a href="#" class="footer__link"
-                    ><img src="./assets/img/tt.png" alt="twitter icon"
+                    ><img src="./assets/img/tt.png" alt=""
                   /></a>
                 </li>
                 <li class="footer__list-item">
                   <a href="#" class="footer__link"
-                    ><img src="./assets/img/gp.png" alt="google plus icon"
+                    ><img src="./assets/img/gp.png" alt=""
                   /></a>
                 </li>
               </ol>

@@ -43,12 +43,12 @@
       visibility: visible;
       z-index: 1000;
 
-      & > span {
+      &__inner {
         width: 3.8rem;
         height: 100%;
       }
 
-      & > span > span {
+      & span {
         @include burger-layer();
 
         display: block;
@@ -116,7 +116,7 @@
   }
 
   &__item {
-    @extend .item-text;
+    @include item-text;
     transition: opacity 0.2s ease-in;
 
     &:not(:last-of-type):hover {
@@ -129,7 +129,7 @@
     position: fixed;
     right: 3.35rem;
 
-    & > span > span {
+    & span {
       background-color: transparent;
 
       &::before {

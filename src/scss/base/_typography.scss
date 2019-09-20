@@ -4,24 +4,20 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.heading {
+@mixin heading {
   font-size: 3.75rem;
   font-weight: 100;
   line-height: 5rem;
   color: $color-white;
-
-  &--inverted {
-    color: $color-primary;
-  }
 }
 
-.subtitle {
+@mixin subtitle {
   color: $color-grey;
   font-size: 2.25rem;
   line-height: 3.5rem;
 }
 
-.feature-heading {
+@mixin feature-heading {
   font-size: 1.5rem;
   line-height: 2.25rem;
   font-weight: 400;
@@ -32,7 +28,7 @@ body {
   }
 }
 
-.feature-text {
+@mixin feature-text {
   color: $color-primary;
   font-weight: 700;
   line-height: 3.75rem;
@@ -43,7 +39,7 @@ body {
   }
 }
 
-.item-text {
+@mixin item-text {
   color: $color-white;
   font-size: 1.125rem;
   font-weight: 400;
@@ -55,7 +51,35 @@ body {
   }
 }
 
-.paragraph {
-  @extend .item-text;
+@mixin paragraph {
+  @include item-text;
   color: $color-grey;
+}
+
+.t-heading {
+  @include heading;
+
+  &--inverted {
+    color: $color-primary;
+  }
+}
+
+.t-subtitle {
+  @include subtitle;
+}
+
+.t-feature-heading {
+  @include feature-heading;
+}
+
+.t-feature-text {
+  @include feature-text;
+}
+
+.t-item-text {
+  @include item-text;
+}
+
+.t-paragraph {
+  @include paragraph;
 }

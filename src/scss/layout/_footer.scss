@@ -1,5 +1,5 @@
 .footer {
-  @extend .item-text;
+  @include item-text;
 
   background-color: $color-primary;
   color: $color-grey;
