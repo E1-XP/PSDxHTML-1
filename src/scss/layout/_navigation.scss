@@ -43,12 +43,10 @@
       visibility: visible;
       z-index: 1000;
 
-      &__inner {
+      &-inner {
         width: 3.8rem;
         height: 100%;
-      }
 
-      & span {
         @include burger-layer();
 
         display: block;
@@ -129,7 +127,7 @@
     position: fixed;
     right: 3.35rem;
 
-    & span {
+    &-inner {
       background-color: transparent;
 
       &::before {
